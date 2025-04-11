@@ -13,6 +13,9 @@ const os_p7 = require("./subjects/os/p7");
 const os_p8 = require("./subjects/os/p8");
 const os_p9 = require("./subjects/os/p9");
 const os_p10 = require("./subjects/os/p10");
+const rr = require("./subjects/os/rr");
+const sjf = require("./subjects/os/sjf");
+const srtf = require("./subjects/os/srtf");
 
 const dc_p1 = require("./subjects/dc/p1");
 const dc_p2 = require("./subjects/dc/p2");
@@ -36,6 +39,9 @@ app.use("/os/p7", os_p7);
 app.use("/os/p8", os_p8);
 app.use("/os/p9", os_p9);
 app.use("/os/p10", os_p10);
+app.use("/os/rr", rr);
+app.use("/os/sjf", sjf);
+app.use("/os/srtf", srtf);
 
 app.use("/dc/p1", dc_p1);
 app.use("/dc/p2", dc_p2);
