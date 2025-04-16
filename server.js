@@ -52,6 +52,8 @@ const fs10d = require("./subjects/fswd/10d");
 const fsadd = require("./subjects/fswd/add");
 const fsmat = require("./subjects/fswd/matrix");
 
+const db1 = require("./subjects/db/1");
+
 // Mount the routers on the corresponding base paths
 app.use("/os/p1", os_p1);
 app.use("/os/p2", os_p2);
@@ -101,6 +103,8 @@ app.use("/fs/10c", fs10c);
 app.use("/fs/10d", fs10d);
 app.use("/fs/add", fsadd);
 app.use("/fs/matrix", fsmat);
+
+app.use("/db/1", db1);
 
 // Default route for testing
 app.get("/", (req, res) => {
